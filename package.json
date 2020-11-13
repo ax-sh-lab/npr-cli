@@ -1,0 +1,11 @@
+{
+  "name": "npr-cli",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/ax-sh/npr-cli.git",
+  "author": "Axmin",
+  "license": "MIT",
+  "dependencies": {
+    "moment": "^2.29.1"
+  }
+}
