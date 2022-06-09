@@ -16,7 +16,7 @@ jobs:
       env:
         API_KEY: ${{secrets.API_KEY}}
       run: |-
-        curl "http://data.fixer.io/api/latest?access_key=$API_KEY" | jq . > forex.json
+        curl "http://data.fixer.io/api/latest?access_key=$API_KEY" | jq . > forex-$(date "+%Y.%m.%d-%H.%M.%S").json
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
